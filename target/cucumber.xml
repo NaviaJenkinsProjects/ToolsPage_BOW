@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="471.234" tests="8" skipped="0" failures="1" errors="0">
+<testcase classname="Navia Online Trading Market Post Market Testing" name="Login Navia" time="52.717">
+<system-out><![CDATA[
+Given User Navigate to Navia................................................passed
+When User Click login with client code......................................passed
+And User Enter Client Code..................................................passed
+And User  Enter Password....................................................passed
+And User Click Agree CheckBox...............................................passed
+And User Click Login button.................................................passed
+And User Click Otp Verification and enter manualy...........................passed
+And User Click Login Again..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="User Check  - Charts- functionality" time="184.448">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+And User Click the Watch List...............................................passed
+And User Select scrip "S&P BSE SENSEX"......................................passed
+And User Click Watch List Again.............................................passed
+And User mouse over the scrip "Nifty 50"....................................passed
+And User Click the Charts...................................................passed
+And User Click the Candles Icon.............................................passed
+And User Choose Candle "candle".............................................passed
+And User Click the Mintues..................................................passed
+And User Choose One Minute..................................................passed
+And Verify One Minute Feed Connection Value and Wait One Minute Very Feed Connection Changes.passed
+And User Click the Five Minute..............................................passed
+And Verify Five Minute Feed Connection Valuebb..............................passed
+And User Click One Day......................................................passed
+And Verify One Day Feed Connection Value and Wait One Minute Very Feed Connection Changes.passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="Payin add money in navia" time="24.6">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='wid_amt']&quot;}
+  (Session info: chrome=148.0.7778.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dff33c5a6de64e1c3d65227d00c2b00c, findElement {using=xpath, value=//input[@id='wid_amt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\CommonPC\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55637}, goog:processID: 33228, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55637/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dff33c5a6de64e1c3d65227d00c2b00c">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='wid_amt']"}
+  (Session info: chrome=148.0.7778.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dff33c5a6de64e1c3d65227d00c2b00c, findElement {using=xpath, value=//input[@id='wid_amt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\CommonPC\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55637}, goog:processID: 33228, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55637/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dff33c5a6de64e1c3d65227d00c2b00c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.stepdefinition.Navia_Login.user_click_the_withdraw_button(Navia_Login.java:1552)
+	at ✽.User Click The Withdraw button(file:///D:/bk/PostMarket_Bow/src/test/java/com/feature/PostMarketTesting_Nine_Fifteen.feature:33)
+]]>
+</failure>
+<system-out><![CDATA[
+When Navigate to home page..................................................skipped
+And User Click The Withdraw button..........................................failed
+And User Click Add Money....................................................skipped
+And User enter money in amount to add.......................................skipped
+And User Choose Pay Using UPI...............................................skipped
+And User Enter UPI/ID/Mobile Number and click pay now.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="User Check  - POP UP- functionality" time="23.998">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+And User click the search box...............................................passed
+And User Search any "HDFCBANK" Script.......................................passed
+And User Mouse Over and Add a Script........................................passed
+And User POP Up Message Appear Verify POP UP................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="Add and Remove Any Script and Verify" time="32.479">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+And User click the search box...............................................passed
+And User Search any "SWIGGY" Script.........................................passed
+And User Mouse Over and Add a Script "SWIGGY"...............................passed
+And User POP Up Message Appear Verify POP UP................................passed
+And User Remove The "SWIGGY" Stock..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="User Check  - F&amp;O- functionality" time="47.789">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+When User Search "Banknifty" in Searchbox...................................passed
+And User Click Futures......................................................passed
+And User mouse over "BANKNIFTY" and click add icon..........................passed
+And Symbol Has been Added Successfully Notification Shown...................passed
+And User Click Clear in search box..........................................passed
+And User Click "BANKNIFTY"..................................................passed
+And User Click F&O..........................................................passed
+And User Click Cancel button in Ready Made Pop up...........................passed
+And User Click LTP..........................................................passed
+And User Verify the Fluctuating.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="User Check  - Save Strategy- functionality" time="60.571">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+When User Search "Banknifty" in Searchbox...................................passed
+And User Click Futures......................................................passed
+And User mouse over "BANKNIFTY" and click add icon..........................passed
+And Symbol Has been Added Successfully Notification Shown...................passed
+And User Click Clear in search box..........................................passed
+And User Click "BANKNIFTY"..................................................passed
+And User Click F&O..........................................................passed
+And User Click Cancel button in Ready Made Pop up...........................passed
+And User Click LTP..........................................................passed
+And User Select any Call LTP Buy............................................passed
+And User Select any Put LTP Sell............................................passed
+And User Click Save Strategy................................................passed
+And User enter Strategy Name "testdata36"...................................passed
+And User Click Save.........................................................passed
+And User Click Strategy Message ok..........................................passed
+And User Click Place Order..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navia Online Trading Market Post Market Testing" name="User Check  - Ready Made- functionality" time="44.081">
+<system-out><![CDATA[
+When Navigate to home page..................................................passed
+When User Search "Banknifty" in Searchbox...................................passed
+And User Click Futures......................................................passed
+And User mouse over "BANKNIFTY" and click add icon..........................passed
+And Symbol Has been Added Successfully Notification Shown...................passed
+And User Click Clear in search box..........................................passed
+And User Click "BANKNIFTY"..................................................passed
+And User Click F&O..........................................................passed
+And User Click Cancel button in Ready Made Pop up...........................passed
+And User Click LTP..........................................................passed
+And User Select any Call LTP Buy............................................passed
+And User Select any Put LTP Sell............................................passed
+And User click read made....................................................passed
+And User Choose Ready made Strategy categories "Bearish"....................passed
+And User Select Strategy under categories "Put Ratio Back Spread"...........passed
+]]></system-out>
+</testcase>
+</testsuite>
