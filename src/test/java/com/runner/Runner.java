@@ -30,7 +30,11 @@ public class Runner {
     }
 
     @AfterClass
-    public static void afterSuite() {
-      BaseClass.quitBrowser();
+    public static void afterSuite() { 
+    	
+    BaseClass.quitBrowser();
+    	
+    
+    
     }
 }

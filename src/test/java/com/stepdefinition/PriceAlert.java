@@ -365,6 +365,7 @@ public class PriceAlert extends BaseClass {
 			Thread.sleep(1000);
 			Actions a = new Actions(driver);
 			a.moveToElement(add).perform();
+			a.doubleClick(add).perform();
 			
 			Thread.sleep(1000);
 		
@@ -418,13 +419,30 @@ public class PriceAlert extends BaseClass {
 	public void user_select_the_alert_tab_options(String string) throws InterruptedException {
 	   
 		Thread.sleep(4000);
+		
+		try {
 			
-			singleFrame();
+			driver.findElement(By.xpath("//label[text()='Price Alert']//ancestor::li")).click();
 			
-			driver.findElement(By.xpath("//button[text()='"+string+"']")).click();
+			WebElement add = driver.findElement(By.xpath("//div[@class='notify dpd ']"));
+
+			Thread.sleep(1000);
+			Actions a = new Actions(driver);
+			a.moveToElement(add).perform();
+			a.doubleClick(add).perform();
+			
+            singleFrame();
+			
+			driver.findElement(By.xpath("//button[contains(text(),'Current')]")).click();
 			
 			switchToMainFrame();
 			Thread.sleep(1000);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+			
+			
 		
 		
 	}
