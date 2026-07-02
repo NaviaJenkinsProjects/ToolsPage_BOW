@@ -1021,10 +1021,12 @@ public class Login extends BaseClass {
 
 		ac.moveToElement(dashBoard).perform();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//label[text()='Tools']//ancestor::li")).click();Thread.sleep(1000);
 
 		driver.findElement(By.xpath("//label[text()='Tools']//ancestor::li")).click();
-
+		Thread.sleep(2000);
 	}
 
 	@When("User Click Basket")
@@ -4644,10 +4646,10 @@ public class Login extends BaseClass {
 		WebElement element2 = driver.findElement(By.xpath("//iframe[contains(@src,'global')]"));
 
 		driver.switchTo().frame(element2);
-		WebElement element = driver.findElement(By.xpath("//li[text()='Global']"));
+		WebElement element = driver.findElement(By.xpath("//a[text()='nCoins']"));
 		String text = element.getText();
 
-		if (text.equalsIgnoreCase("global")) {
+		if (text.equalsIgnoreCase("nCoins")) {
 			System.out.println("Verify the global page loaded Successfully");
 		} else {
 			System.out.println("Verify the global page is Not loaded");

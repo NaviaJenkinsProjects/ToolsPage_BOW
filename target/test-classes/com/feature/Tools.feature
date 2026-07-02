@@ -97,7 +97,7 @@ Scenario: Verify Global
     When Navigate to home page
     And User MouseOver Dashboard and Click Tools
     And user Mouse Over The Element
-    And User Click Tools "Global" 
+    And User Click Tools "Global"  
     And User Verify Global Page
     
 Scenario: Verify Buy Back
