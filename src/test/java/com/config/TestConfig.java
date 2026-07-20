@@ -5,7 +5,7 @@ public final class TestConfig {
     public static final String LOGIN_URL = get("rekyc.login.url", "https://rocket.tradeplusonline.com/login.php");
     public static final String HOME_URL = get("rekyc.home.url", "https://rocket.tradeplusonline.com/index.php");
     public static final String CLIENT_CODE = get("rekyc.client.code", "63748379");
-    public static final String PASSWORD = get("rekyc.password", "Navia@1234");
+    public static final String PASSWORD = get("rekyc.password", "Testing@1234");
     public static final String OTP_MAILBOX = get("rekyc.otp.mailbox", "naviatesting@yopmail.com");
     public static final String OTP_PROVIDER_URL = get("rekyc.otp.provider.url", "https://yopmail.com/");
     public static final String UPI_ID = get("rekyc.upi.id", "6374837965");
