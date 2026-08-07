@@ -1210,7 +1210,7 @@ public class Login extends BaseClass {
 
 		Thread.sleep(5000);
 
-		driver.findElement(By.xpath("//span[text()='"+string+"']//ancestor::div[@class='basket_box']")).click();
+		driver.findElement(By.xpath("(//span[text()='TEST']//ancestor::div[@class='basket_box'])[1]")).click();
 
 		Thread.sleep(1000);
 
@@ -2611,6 +2611,17 @@ public class Login extends BaseClass {
 
 		driver.findElement(By.xpath("//a[text()='Bank']//parent::li")).click();
 		Thread.sleep(1000);
+		
+		try {
+			
+			driver.findElement(By.xpath("(//a[contains(text(),'Ok')])[1]")).click();
+			Thread.sleep(1000);
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 
 		driver.findElement(By.xpath("(//img[@class='icon show_icon'])[2]")).click();
 
